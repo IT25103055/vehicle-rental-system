@@ -1,0 +1,18 @@
+# Copy this file to application.properties and fill in your local values.
+# application.properties is git-ignored so each teammate can use their own DB credentials.
+
+spring.application.name=vehicle-rental-system
+
+# --- MySQL (local dev) ---
+spring.datasource.url=jdbc:mysql://localhost:3306/vehicle_rental_db?createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=changeme
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+server.port=8080
+
+# --- Security (placeholder, wire up real user store in Sprint 1) ---
+spring.security.user.name=admin
+spring.security.user.password=admin
